@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://kit.fontawesome.com/6b219767e3.js" crossorigin="anonymous"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+         </div>
+        <div class="forms-container">
+            <div class="signin-signup">
+                
+                <!-- Sign In Form -->
+                <form id="sign-in-form" class="sign-in-form">
+                    <h2 class="title">Entrar</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email" id="sign-in-username" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha" id="sign-in-password" required />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                    <p class="social-text">Nos siga em nossas outras redes sociais!</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+                <!-- End Sign In Form -->
+
+                <!-- Sign Up Form -->
+                <form id="sign-up-form" class="sign-up-form">
+                    <h2 class="title">Entrar</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome de usuário" id="sign-up-username" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="sign-up-email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha" id="sign-up-password" required />
+                    </div>
+                    <input type="submit" value="Cadastrar" class="btn" />
+                    <p class="social-text">Nos siga em nossas outras redes sociais!</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+                <!-- End Sign Up Form -->
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Não possui uma conta?</h3>
+                    <p>Então basta se cadastrar no nosso site apertando o botão abaixo!</p>
+                    <button class="btn transparent" id="sign-up-btn">Cadastrar</button>
+                </div>
+                <img src="src/img/biology2.svg" class="image" alt="Sign Up Image" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Já possui uma conta?</h3>
+                    <p>Então basta acessar a sua conta no nosso site apertando o botão abaixo!</p>
+                    <button class="btn transparent" id="sign-in-btn">Login</button>
+                </div>
+                <img src="src/img/nature-fone.svg" class="image" alt="Sign Up Image" />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="src/js/painel.js" defer></script>
+    <script src="src/js/ajax_cadastro.js" defer></script>
+    <script src="src/js/ajax_login.js" defer></script>
+</body>
+</html>
